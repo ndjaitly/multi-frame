@@ -1,0 +1,30 @@
+// Use make all to build python classes.
+
+package dbn;
+
+message LayerConfig {
+  required string name = 1;
+  required int32 input_dim = 2;
+  required int32 num_units = 3;
+  enum LayerType {
+    BINARY_BINARY = 0;
+    GAUSSIAN_BINARY = 1;
+  }
+  required LayerType type = 4;
+  required float wt_sigma = 5 [default = 3.0] ;
+  required float vis_bias = 6 [default = 0];
+  required float hid_bias = 7 [default = -1];
+
+  required float epsilon_w = 8 [default = 0.0001] ; 
+  required float epsilon_b = 9 [default = 0.0001] ; 
+  required float initial_momentum  = 10 [default = 0.9] ; 
+  required float final_momentum  = 11 [default = 0.9] ; 
+  required int32 mom_switch_epoch = 12 [default = 0] ;
+  required float l2_decay = 13 [default = 0] ;
+  required int32 num_epochs = 14 [default = 50] ;
+
+}
+
+message dbn {
+  repeated LayerConfig layer_configs = 1;
+}

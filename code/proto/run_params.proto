@@ -1,0 +1,22 @@
+// Use make all to build python classes.
+package run_params;
+message DataParams {
+  required bool use_delta = 1 [default=true];
+  enum NormalizationType {
+    CMN = 0;
+    CMVN = 1;
+    GLOB_NORMALIZE = 2;
+    NO_NORMALIZE = 3;
+  }
+  required NormalizationType normalization = 2 [default=CMVN];
+  required int32 num_frames_per_pt = 3 [default=15];
+  optional int32 num_output_frames_per_pt = 4 [default=15];
+  optional bool smooth_alignments = 5 [default=false];
+}
+
+message params {
+  required DataParams data_params = 1;
+  required int32 batch_size = 2 [default=128];
+  required int32 max_bad_epochs = 3 [default=10];
+  required int32 max_epochs = 4 [default=40];
+}

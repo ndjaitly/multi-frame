@@ -1,0 +1,8 @@
+data_params {
+  use_delta: true
+  normalization: GLOB_NORMALIZE
+  num_frames_per_pt: 9
+}
+batch_size: 128
+max_bad_epochs: 10
+max_epochs: 30

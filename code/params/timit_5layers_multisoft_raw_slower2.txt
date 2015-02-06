@@ -1,0 +1,198 @@
+layers {
+  name: "Layer1"
+  input_dim: -1
+  num_units: 2000
+  type: SIGMOID
+  init_params {
+    wt_sigma: 3.0
+    biases_min: 0
+    biases_max: 0
+  }
+  learning_schedule {
+    l1_wt: 0
+    l2_wt: 0.0002
+    epsilon: 0.005
+    momentum: 0.0
+    start_epoch: 1
+    end_epoch: 1
+    dropout_rate: 0.0
+    wt_norm_constraint: 0.0
+    ada_lambda: 0.0
+  }
+  learning_schedule {
+    l1_wt: 0
+    l2_wt: 0.0002
+    epsilon: 0.005
+    momentum: 0.9
+    start_epoch: 2
+    end_epoch: 100000
+    dropout_rate: 0.0
+    wt_norm_constraint: 0.0
+    ada_lambda: 0.0
+  }
+}
+layers {
+  name: "Layer2"
+  input_dim: 2000
+  num_units: 2000
+  type: SIGMOID
+  init_params {
+    wt_sigma: 3.0
+    biases_min: 0
+    biases_max: 0
+  }
+  learning_schedule {
+    l1_wt: 0
+    l2_wt: 0.0001
+    epsilon: 0.04
+    momentum: 0.0
+    start_epoch: 1
+    end_epoch: 1
+    dropout_rate: 0.0
+    wt_norm_constraint: 0.0
+    ada_lambda: 0.0
+  }
+  learning_schedule {
+    l1_wt: 0
+    l2_wt: 0.0001
+    epsilon: 0.04
+    momentum: 0.9
+    start_epoch: 2
+    end_epoch: 100000
+    dropout_rate: 0.0
+    wt_norm_constraint: 0.0
+    ada_lambda: 0.0
+  }
+}
+layers {
+  name: "Layer3"
+  input_dim: 2000
+  num_units: 2000
+  type: SIGMOID
+  init_params {
+    wt_sigma: 3.0
+    biases_min: 0
+    biases_max: 0
+  }
+  learning_schedule {
+    l1_wt: 0
+    l2_wt: 0.0001
+    epsilon: 0.1
+    momentum: 0.0
+    start_epoch: 1
+    end_epoch: 1
+    dropout_rate: 0.0
+    wt_norm_constraint: 0.0
+    ada_lambda: 0.0
+  }
+  learning_schedule {
+    l1_wt: 0
+    l2_wt: 0.0001
+    epsilon: 0.1
+    momentum: 0.9
+    start_epoch: 2
+    end_epoch: 100000
+    dropout_rate: 0.0
+    wt_norm_constraint: 0.0
+    ada_lambda: 0.0
+  }
+}
+layers {
+  name: "Layer4"
+  input_dim: 2000
+  num_units: 2000
+  type: SIGMOID
+  init_params {
+    wt_sigma: 3.0
+    biases_min: 0
+    biases_max: 0
+  }
+  learning_schedule {
+    l1_wt: 0
+    l2_wt: 0.0001
+    epsilon: 0.1
+    momentum: 0.0
+    start_epoch: 1
+    end_epoch: 1
+    dropout_rate: 0.0
+    wt_norm_constraint: 0.0
+    ada_lambda: 0.0
+  }
+  learning_schedule {
+    l1_wt: 0
+    l2_wt: 0.0001
+    epsilon: 0.1
+    momentum: 0.9
+    start_epoch: 2
+    end_epoch: 100000
+    dropout_rate: 0.0
+    wt_norm_constraint: 0.0
+    ada_lambda: 0.0
+  }
+}
+layers {
+  name: "Layer5"
+  input_dim: 2000
+  num_units: 2000
+  type: SIGMOID
+  init_params {
+    wt_sigma: 3.0
+    biases_min: 0
+    biases_max: 0
+  }
+  learning_schedule {
+    l1_wt: 0
+    l2_wt: 0.0001
+    epsilon: 0.1
+    momentum: 0.0
+    start_epoch: 1
+    end_epoch: 1
+    dropout_rate: 0.0
+    wt_norm_constraint: 0.0
+    ada_lambda: 0.0
+  }
+  learning_schedule {
+    l1_wt: 0
+    l2_wt: 0.0001
+    epsilon: 0.1
+    momentum: 0.9
+    start_epoch: 2
+    end_epoch: 100000
+    dropout_rate: 0.0
+    wt_norm_constraint: 0.0
+    ada_lambda: 0.0
+  }
+}
+layers {
+  name: "OutputLayer"
+  input_dim: 2000
+  num_units: -1
+  type: MULTI_SOFTMAX
+  init_params {
+    wt_sigma: 0.5
+    biases_min: 0.0
+    biases_max: 0.0
+  }
+  learning_schedule {
+    l1_wt: 0
+    l2_wt: 0
+    epsilon: 0.1
+    momentum: 0.0
+    start_epoch: 1
+    end_epoch: 1
+    dropout_rate: 0.0
+    wt_norm_constraint: 0.0
+    ada_lambda: 0.0
+  }
+  learning_schedule {
+    l1_wt: 0
+    l2_wt: 0
+    epsilon: 0.1
+    momentum: 0.9
+    start_epoch: 2
+    end_epoch: 100000
+    dropout_rate: 0.0
+    wt_norm_constraint: 0.0
+    ada_lambda: 0.0
+  }
+}

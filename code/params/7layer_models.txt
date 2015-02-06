@@ -1,0 +1,2 @@
+/ais/gobi3/u/ndjaitly/workspace/Thesis/final/kaldi_train/runs/fbanks_7layer_l2_1/
+/ais/gobi3/u/ndjaitly/workspace/Thesis/final/kaldi_train/runs/fbanks_7layer_l2_dbn3_1/

@@ -1,0 +1,112 @@
+layer_configs {
+  name: "Layer0"
+  input_dim: -1
+  num_units: 2000
+  type: GAUSSIAN_BINARY
+  wt_sigma: 0.01
+  vis_bias: 0
+  hid_bias: -1
+  epsilon_w: 0.002
+  epsilon_b: 0.002
+  initial_momentum: 0.0
+  final_momentum: 0.9
+  mom_switch_epoch: 1
+  l2_decay: 0.0002
+  num_epochs: 50
+}
+layer_configs {
+  name: "Layer1"
+  input_dim: 2000
+  num_units: 2000
+  type: BINARY_BINARY
+  wt_sigma: 0.01
+  vis_bias: 0
+  hid_bias: -1
+  epsilon_w: 0.02
+  epsilon_b: 0.02
+  initial_momentum: 0.0
+  final_momentum: 0.9
+  mom_switch_epoch: 1
+  l2_decay: 0.0002
+  num_epochs: 50
+}
+layer_configs {
+  name: "Layer2"
+  input_dim: 2000
+  num_units: 2000
+  type: BINARY_BINARY
+  wt_sigma: 0.01
+  vis_bias: 0
+  hid_bias: -1
+  epsilon_w: 0.02
+  epsilon_b: 0.02
+  initial_momentum: 0.0
+  final_momentum: 0.9
+  mom_switch_epoch: 1
+  l2_decay: 0.0002
+  num_epochs: 50
+}
+layer_configs {
+  name: "Layer3"
+  input_dim: 2000
+  num_units: 2000
+  type: BINARY_BINARY
+  wt_sigma: 0.01
+  vis_bias: 0
+  hid_bias: -1
+  epsilon_w: 0.02
+  epsilon_b: 0.02
+  initial_momentum: 0.0
+  final_momentum: 0.9
+  mom_switch_epoch: 1
+  l2_decay: 0.0002
+  num_epochs: 50
+}
+layer_configs {
+  name: "Layer4"
+  input_dim: 2000
+  num_units: 2000
+  type: BINARY_BINARY
+  wt_sigma: 0.01
+  vis_bias: 0
+  hid_bias: -1
+  epsilon_w: 0.02
+  epsilon_b: 0.02
+  initial_momentum: 0.0
+  final_momentum: 0.9
+  mom_switch_epoch: 1
+  l2_decay: 0.0002
+  num_epochs: 50
+}
+layer_configs {
+  name: "Layer5"
+  input_dim: 2000
+  num_units: 2000
+  type: BINARY_BINARY
+  wt_sigma: 0.01
+  vis_bias: 0
+  hid_bias: -1
+  epsilon_w: 0.02
+  epsilon_b: 0.02
+  initial_momentum: 0.0
+  final_momentum: 0.9
+  mom_switch_epoch: 1
+  l2_decay: 0.0002
+  num_epochs: 50
+}
+layer_configs {
+  name: "Layer6"
+  input_dim: 2000
+  num_units: 2000
+  type: BINARY_BINARY
+  wt_sigma: 0.01
+  vis_bias: 0
+  hid_bias: -1
+  epsilon_w: 0.02
+  epsilon_b: 0.02
+  initial_momentum: 0.0
+  final_momentum: 0.9
+  mom_switch_epoch: 1
+  l2_decay: 0.0002
+  num_epochs: 50
+}

@@ -1,0 +1,66 @@
+layers {
+  name: "Layer1"
+  input_dim: -1
+  num_units: 1000
+  type: RELU
+  init_params {
+    wt_sigma: 3.0
+    biases_min: -5.0
+    biases_max: -3.0
+  }
+  learning_schedule {
+    l1_wt: 0.0001
+    l2_wt: 0.0001
+    epsilon: 0.001
+    epsilon_anneal_rate: 0.99
+    momentum: 0.5
+    start_epoch: 0
+    end_epoch: 2
+    dropout_percent: 0.5
+    wt_norm_constraint: 0.07
+  }
+  learning_schedule {
+    l1_wt: 0.0001
+    l2_wt: 0.0001
+    epsilon: 0.001
+    epsilon_anneal_rate: 0.99
+    momentum: 0.9
+    start_epoch: 3
+    end_epoch: 1000
+    dropout_percent: 0.5
+    wt_norm_constraint: 0.07
+  }
+}
+layers {
+  name: "Layer2"
+  input_dim: 1000
+  num_units: 1000
+  type: RELU
+  init_params {
+    wt_sigma: 3.0
+    biases_min: 0.0
+    biases_max: 0.0
+  }
+  learning_schedule {
+    l1_wt: 0.0001
+    l2_wt: 0.0001
+    epsilon: 0.001
+    epsilon_anneal_rate: 0.99
+    momentum: 0.5
+    start_epoch: 0
+    end_epoch: 2
+    dropout_percent: 0.5
+    wt_norm_constraint: 0.07
+  }
+  learning_schedule {
+    l1_wt: 0.0001
+    l2_wt: 0.0001
+    epsilon: 0.001
+    epsilon_anneal_rate: 0.99
+    momentum: 0.9
+    start_epoch: 3
+    end_epoch: 1000
+    dropout_percent: 0.5
+    wt_norm_constraint: 0.07
+  }
+}
